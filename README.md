@@ -1,4 +1,12 @@
-# AGIC: Attention-Guided Image Captioning
+<p align="center">
+  <img src="images/agic.png" alt="AGIC Logo" width="200" style="border-radius: 50%;" />
+</p>
+
+<h1 align="center">AGIC: Attention-Guided Image Captioning</h1>
+
+<p align="center">
+  <img src="images/AGIC-final-Workflow.png" alt="AGIC Workflow" width="600"/>
+</p>
 
 ## What is AGIC?
 AGIC (Attention-Guided Image Captioning) is a framework designed to improve the relevance of image captions by leveraging a contextual relevance amplification mechanism, implemented through an attention-guided process. Inspired by recent research ([Liu et al., 2025](https://arxiv.org/abs/2501.09997)), AGIC uses attention patterns from vision transformers to amplify relevant image regions and generate more accurate and meaningful captions.
