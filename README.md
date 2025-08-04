@@ -1,7 +1,7 @@
 # AGIC: Attention-Guided Image Captioning
 
 ## What is AGIC?
-AGIC (Attention-Guided Image Captioning) is a framework designed to improve the relevance of image captions by leveraging a contextual relevance amplification mechanism, implemented through an attention-guided process. Inspired by recent research ([Liu et al., 2025](https://arxiv.org/abs/2405.00000)), AGIC uses attention patterns from vision transformers to amplify relevant image regions and generate more accurate and meaningful captions.
+AGIC (Attention-Guided Image Captioning) is a framework designed to improve the relevance of image captions by leveraging a contextual relevance amplification mechanism, implemented through an attention-guided process. Inspired by recent research ([Liu et al., 2025](https://arxiv.org/abs/2501.09997)), AGIC uses attention patterns from vision transformers to amplify relevant image regions and generate more accurate and meaningful captions.
 
 ### Model Description
 AGIC works in three main stages:
@@ -11,8 +11,6 @@ AGIC works in three main stages:
    - Amplifies the original image features using the extracted attention weights, making relevant regions more prominent.
 3. **Caption Generation:**
    - Generates captions for the amplified image using a hybrid decoding strategy (beam search, Top-k, Top-p sampling, temperature scaling) to enhance diversity and fluency.
-
-For more details, see the [Model Description](#model-description) section below.
 
 ## Datasets Used
 - **Flickr8k** ([HuggingFace link](https://huggingface.co/datasets/jxie/flickr8k))
@@ -93,4 +91,4 @@ AGIC extracts attention weights from a vision transformer, amplifies the image f
 ## References
 - [Flickr8k Dataset](https://huggingface.co/datasets/jxie/flickr8k)
 - [Flickr30k Dataset](https://huggingface.co/datasets/nlphuji/flickr30k)
-- Liu et al., 2025. Attention Patterns and Self-Reflection for Hallucination Detection in LLMs.
+- Liu et al., 2025. Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models
